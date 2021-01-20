@@ -104,7 +104,7 @@ const btnstyle={margin:'8px 0'}
 
                   <form onSubmit={ guardarDatos } >
                   <TextField label='Nombre' placeholder='Ingresar Nombre' onChange={ e => setname(e.target.value) }fullwidth required/>
-                  <TextField label='Correo Electronico' placeholder='Ingresar Correo'  onChange={ e => setCorreo(e.target.value) }  fullwidth required/>
+                  <TextField label='Correo Electronico' placeholder='Ingresar Correo' type='email'  onChange={ e => setCorreo(e.target.value) }  fullwidth required/>
                   <TextField label='Password' placeholder='Ingresar Clave' type='Password'   onChange={ e => setPassword(e.target.value) } fullwidth required/>
 
 

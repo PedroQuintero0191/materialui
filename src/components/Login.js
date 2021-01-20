@@ -5,7 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import { Button } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
-
+import { Formik, Field, Form, ErrorMessage } from "formik";
 
 
 
@@ -55,7 +55,7 @@ const btnstyle={margin:'8px 0'}
                   <h2>Sign in </h2>
 
                   <form onSubmit={ guardarDatos } >
-                  <TextField label='Correo Electronico' placeholder='Ingresar Correo' onChange={ e => setCorreo(e.target.value) } fullwidth required/>
+                  <TextField label='Correo Electronico' type='email' placeholder='Ingresar Correo' onChange={ e => setCorreo(e.target.value) } fullwidth required/>
                   <TextField label='Password' placeholder='Ingresar Clave' type='Password' onChange={ e => setPassword(e.target.value) }fullwidth required/>
 
 
